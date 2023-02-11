@@ -299,7 +299,7 @@ header {}
 
 
 /*! ================================================================= */
-/*! ================       Our Service End         ================== */
+/*! ================      Our Service Start        ================== */
 /*! ================================================================= */
 
 .our-service {
@@ -320,6 +320,7 @@ header {}
 .our-service .container .our-service__cards {
   margin-top: 3.625rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 6.9375rem;
@@ -363,6 +364,110 @@ header {}
   color: var(--grey100);
 }
 
+@media (max-width: 768px) {
+  .our-service .container .our-service__cards {
+    gap: 2.5rem;
+  }
+}
+
 /*! ================================================================= */
 /*! ================       Our Service End         ================== */
 /*! ================================================================= */
+
+
+/* ================================================================= */
+/* ================     Recent Project Start      ================== */
+/* ================================================================= */
+
+.recent-project {
+  margin-top: 6.25rem;
+}
+
+.recent-project .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-project .container .recent-project__title {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.recent-project .container .recent-project__content  {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 623px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--grey100);
+}
+
+.recent-project .container .recent-project__album {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-areas: 
+  "rpi1 rpi3 rpi4"
+  "rpi2 rpi3 rpi5";
+  gap: 1.5rem;
+}
+
+#rpi1 { grid-area: rpi1; }
+#rpi2 { grid-area: rpi2; }
+#rpi3 { grid-area: rpi3; }
+#rpi4 { grid-area: rpi4; }
+#rpi5 { grid-area: rpi5; }
+
+@media (max-width: 1200px) {
+  .recent-project .container .recent-project__album {
+    grid-template-areas: 
+    "rpi1 rpi3"
+    "rpi2 rpi3"
+    "rpi4 rpi5";
+    gap: 1.5rem;
+  }
+
+  #rpi4 {
+    width: 100%;
+  }
+  #rpi5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .recent-project .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .recent-project .container .recent-project__album {
+    grid-template-areas: 
+    "rpi1"
+    "rpi2"
+    "rpi3"
+    "rpi4"
+    "rpi5";
+    gap: 1.5rem;
+  }
+
+  #rpi1,
+  #rpi2,
+  #rpi3,
+  #rpi4,
+  #rpi5 {
+    width: 100%;
+  }
+}
+
+/* ================================================================= */
+/* ================      Recent Project End       ================== */
+/* ================================================================= */
