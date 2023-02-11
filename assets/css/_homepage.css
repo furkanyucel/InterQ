@@ -327,7 +327,12 @@ header {}
 }
 
 .our-service .container .our-service-title .our-service-cards .card .card-content {
-
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;  
+  color: var(--grey100);
 }
 
 /*! ================================================================= */
