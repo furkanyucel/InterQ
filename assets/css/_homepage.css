@@ -88,6 +88,10 @@ header {}
   color: var(--light);
 }
 
+.navbar-mobil {
+  display: none;
+}
+
 @media (max-width: 890px) {
   .navbar-mobil {
     width: 100%;
@@ -179,7 +183,7 @@ header {}
 }
 /* hero end */
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .header .container {
     margin: 0 1.5rem;
   }
