@@ -1,3 +1,7 @@
+/*! ================================================================= */
+/*! ================         Header Start          ================== */
+/*! ================================================================= */
+
 header {}
 #header {}
 .header {
@@ -216,3 +220,78 @@ header {}
     line-height: 37px !important;
   }
 }
+
+/*! ================================================================= */
+/*! ================          Header End           ================== */
+/*! ================================================================= */
+
+
+
+
+
+/* ================================================================= */
+/* ================        About US Start         ================== */
+/* ================================================================= */
+
+.about {
+  margin-top: 6.25rem;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.75rem;
+}
+
+/* about img start */
+.about .container .about-img{}
+
+.about .container .about-img img{
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  background-size: cover;
+}
+/* about img end */
+
+/* about info start */
+.about .container .about-info {}
+
+.about .container .about-info .about-title {
+  font-family: var(--font-jakarta);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  color: var(--primary);
+}
+
+.about .container .about-info .about-text {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 502px;
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+/* about info end */
+
+@media (max-width: 1110px) {
+  .about .container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 904px) {
+  .about .container {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+/* ================================================================= */
+/* ================         About US End          ================== */
+/* ================================================================= */
