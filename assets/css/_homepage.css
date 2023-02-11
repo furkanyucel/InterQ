@@ -233,11 +233,11 @@ header {}
 /* ================        About US Start         ================== */
 /* ================================================================= */
 
-.about {
+.about__card {
   margin-top: 6.25rem;
 }
 
-.about .container {
+.about__card .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,9 +245,9 @@ header {}
 }
 
 /* about img start */
-.about .container .about-img{}
+.about__card .container .about__img {}
 
-.about .container .about-img img{
+.about__card .container .about__img img {
   width: 100%;
   min-width: 300px;
   object-fit: cover;
@@ -256,21 +256,21 @@ header {}
 /* about img end */
 
 /* about info start */
-.about .container .about-info {}
+.about__card .container .about__info {}
 
-.about .container .about-info .about-title {
-  font-family: var(--font-jakarta);
+.about__card .container .about__info .about__title {
+  font-family: var(--font-yeseva);
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.875rem;
   color: var(--primary);
 }
 
-.about .container .about-info .about-text {
+.about__card .container .about__info .about__text {
   margin-top: 1.5rem;
   width: 100%;
   max-width: 502px;
-  font-family: 'Plus Jakarta Sans';
+  font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .875rem;
   line-height: 1.75rem;
@@ -279,13 +279,13 @@ header {}
 /* about info end */
 
 @media (max-width: 1110px) {
-  .about .container {
+  .about__card .container {
     gap: 2rem;
   }
 }
 
 @media (max-width: 904px) {
-  .about .container {
+  .about__card .container {
     flex-direction: column;
     margin-left: 24px;
     margin-right: 24px;
@@ -302,21 +302,47 @@ header {}
 /*! ================       Our Service End         ================== */
 /*! ================================================================= */
 
-.our-service {}
+.our-service {
+  margin-top: 6.25rem;
+}
 
 .our-service .container {}
 
-.our-service .container .our-service-title {}
+.our-service .container .our-service__title {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
 
-.our-service .container .our-service-title .our-service-cards {}
+.our-service .container .our-service__cards {
+  margin-top: 3.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.9375rem;
+}
 
-.our-service .container .our-service-title .our-service-cards .card {}
+.our-service .container .our-service__cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.our-service .container .our-service-title .our-service-cards .card .card-icon {}
+/* icon start */
+.our-service .container .our-service__cards .card .card__icon {}
 
-.our-service .container .our-service-title .our-service-cards .card .card-icon img {}
+.our-service .container .our-service__cards .card .card__icon img {
+  padding: 24px;
+  background: var(--secondary);
+  border-radius: 100%;
+}
+/* icon end */
 
-.our-service .container .our-service-title .our-service-cards .card .card-title {
+.our-service .container .our-service__cards .card .card__title {
   margin-top: 1.5rem;
   font-family: var(--font-yeseva);
   font-weight: 400;
@@ -326,7 +352,9 @@ header {}
   color: var(--primary);
 }
 
-.our-service .container .our-service-title .our-service-cards .card .card-content {
+.our-service .container .our-service__cards .card .card__content {
+  margin-top: .75rem;
+  width: 296px;
   font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .875rem;
