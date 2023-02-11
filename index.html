@@ -58,10 +58,44 @@
         <!-- contact end -->
 
         <!-- mobil hamburger menu start -->
-        <i class="hamburger-btn bi bi-list"></i>
+        <figure onclick="openMobilMenu()" class="hamburger-btn">
+          <i class="bi bi-list"></i>
+        </figure>
         <!-- mobil hamburger menu end -->
 
       </navbar>
+
+      <!--? nav mobil menu start -->
+    <div class="navbar-mobil">
+      <div class="navbar-mobil__exit">
+        <i onclick="closeMobilMenu()" class="bi bi-x-lg" style="font-size: 24px;"></i>
+      </div>
+  
+        <!-- links start -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="pages.html" class="nav-link">Pages</a>
+          </li>
+        </ul>
+        <!-- links end -->
+    </div>
+    <!--? nav mobil menu end -->
       <!-- navbar end -->
       <!-- hero start -->
       <div class="hero">
@@ -73,5 +107,7 @@
     </div>
   </header>
   <!-- Header End -->
+
+<script src="assets/js/navbar-mobil.js"></script>
 </body>
 </html>
