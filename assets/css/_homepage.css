@@ -318,7 +318,7 @@ header {}
 
 .our-service .container .our-service-title .our-service-cards .card .card-title {
   margin-top: 1.5rem;
-  font-family: 'Yeseva One';
+  font-family: var(--font-yeseva);
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -326,7 +326,9 @@ header {}
   color: var(--primary);
 }
 
-.our-service .container .our-service-title .our-service-cards .card .card-content {}
+.our-service .container .our-service-title .our-service-cards .card .card-content {
+
+}
 
 /*! ================================================================= */
 /*! ================       Our Service End         ================== */
