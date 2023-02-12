@@ -632,3 +632,153 @@ header {}
 /*! ================================================================= */
 /*! ================     Get More Updates End      ================== */
 /*! ================================================================= */
+
+
+
+/* ================================================================= */
+/* =============     Our Customers Review Start      =============== */
+/* ================================================================= */
+
+.customers {
+  margin-top: 6.25rem;
+}
+
+.customers .container {}
+
+.customers__title {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.customers__content {
+  margin: .75rem auto;
+  width: 100%;
+  max-width: 623px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;  
+  color: var(--grey100);
+}
+
+.customers__main {
+  margin: 4.125rem auto;
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+/* left */
+.customers__main__left {}
+
+.customers__main__person {
+  width: 290px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border-radius: 16px;
+  padding-left: 18px;
+}
+
+.customers__main__avatar {}
+
+.customers__main__info {}
+
+.customers__main__info__name {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+.customers__main__info__job {
+  margin-top: .1875rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+
+/* center */
+.customers__main__center {}
+
+.customers__main__center__title {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+.customers__main__center__stars {
+  margin-top: 1rem;
+  color: var(--yellow);
+}
+
+.customers__main__center__content {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 432px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--grey100);
+}
+
+/* right */
+.customers__main__right {
+  border-radius: 24px;
+}
+
+.customers__main__center__img {
+  border-radius: 24px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 1250px) {
+  .customers__main {
+    flex-wrap: wrap;
+  }
+
+  .customers__main__right {
+    text-align: center;
+    width: 100%;
+    max-width: 750px;
+  }
+  
+  .customers__main__center__img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 790px) {
+  .customers .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+
+/* ================================================================= */
+/* ==============     Our Customers Review End      ================ */
+/* ================================================================= */
