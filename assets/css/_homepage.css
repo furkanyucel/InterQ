@@ -471,3 +471,123 @@ header {}
 /* ================================================================= */
 /* ================      Recent Project End       ================== */
 /* ================================================================= */
+
+
+/*! ================================================================= */
+/*! ================    Get More Updates Start     ================== */
+/*! ================================================================= */
+
+.get-more-updates {
+  margin-top: 6.25rem;
+  background: var(--grey10);
+}
+
+.get-more-updates .container {
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
+.get-more-updates .container .get-more-updates__title {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.get-more-updates .container .get-more-updates__content {
+  margin: .75rem auto;
+  width: 100%;
+  max-width: 623px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;  
+  color: var(--grey100);
+}
+
+.get-more-updates .container .get-more-updates__cards {
+  margin-top: 2.625rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6875rem;
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card {}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__img {
+  border-radius: 20px;
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__date {
+  margin-top: 1.5rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--secondary);
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__title {
+  margin-top: .75rem;
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  color: var(--primary);
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__content {
+  margin-top: .75rem;
+  width: 100%;
+  max-width: 395px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__btn {
+  margin-top: 1.5rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--secondary);
+  padding: 3.5px 24px;
+  background: var(--grey10);
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-more-updates .container .get-more-updates__cards .get-more-updates__card__btn:hover {
+  color: var(--light);
+  background: var(--success);
+  border: 1px solid transparent;
+}
+
+@media (max-width: 768px) {
+  .get-more-updates .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .get-more-updates .container .get-more-updates__cards .get-more-updates__card {
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .get-more-updates .container .get-more-updates__cards {
+    flex-direction: column;
+    gap: 1.6875rem;
+  }
+}
+
+/*! ================================================================= */
+/*! ================     Get More Updates End      ================== */
+/*! ================================================================= */
