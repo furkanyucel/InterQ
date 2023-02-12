@@ -691,6 +691,10 @@ header {}
   padding-left: 18px;
 }
 
+.customers__main__person:hover {
+  background: var(--grey10);
+}
+
 .customers__main__avatar {}
 
 .customers__main__info {}
