@@ -44,6 +44,7 @@ header {}
   color: var(--grey100);
   border-bottom: 1px solid transparent;
   padding-bottom: 4px;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 .header .container .navbar .nav-link:hover {
@@ -63,6 +64,7 @@ header {}
   border: 1px solid var(--primary);
   border-radius: 4px;
   background: transparent;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 .header .container .navbar .contact-btn:hover {
@@ -179,6 +181,7 @@ header {}
   background: var(--secondary);
   border-radius: 4px;
   border: none;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 .header .container .hero-btn:hover {
@@ -508,10 +511,17 @@ header {}
   color: var(--grey100);
 }
 
-.get-more-updates .container .get-more-updates__cards {
+.get-more-updates .container .get-more-updates__card-group {
   margin-top: 2.625rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-more-updates .container .get-more-updates__cards {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.6875rem;
 }
 
@@ -563,12 +573,39 @@ header {}
   border: 1px solid var(--secondary);
   border-radius: 4px;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .get-more-updates .container .get-more-updates__cards .get-more-updates__card__btn:hover {
   color: var(--light);
   background: var(--success);
   border: 1px solid transparent;
+}
+
+.get-more-updates .container .get-more-updates__btn-all {
+  margin-top: 4rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--light);
+  padding: 12px 57px;
+  background: var(--secondary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.get-more-updates .container .get-more-updates__btn-all:hover {
+  background: var(--success);
+}
+
+@media (min-width: 816px) and (max-width: 1245px) {
+  .get-more-updates .container .get-more-updates__card:last-child {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -585,6 +622,10 @@ header {}
   .get-more-updates .container .get-more-updates__cards {
     flex-direction: column;
     gap: 1.6875rem;
+  }
+
+  .get-more-updates .container .get-more-updates__card {
+    display: block;
   }
 }
 
