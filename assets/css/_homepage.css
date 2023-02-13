@@ -943,8 +943,217 @@ header {}
   .consultation {
     padding: 54px 24px;
   }
+}
 
 
 /*! ================================================================= */
 /*! ==============          Consultation End         ================ */
 /*! ================================================================= */
+
+
+/* ================================================================= */
+/* ==============            Footer Start           ================ */
+/* ================================================================= */
+
+.footer {
+  
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+}
+
+.footer__top {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "info links social app";
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  padding: 48px 100px;
+}
+
+.footer__info { grid-area: info; }
+
+.footer__logo {}
+
+.footer__content {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 240px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+
+.footer__links {
+  grid-area: links;
+  display: flex;
+  gap: 5rem;
+}
+
+.footer__links__menu {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+
+}
+
+.footer__links__item {}
+
+.footer__links__link {
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--grey50);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__links__link:hover {
+  color: var(--secondary);
+}
+
+.footer__social { grid-area: social; }
+
+.footer__social__label {
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--light);
+}
+
+.footer__social__newsletter {}
+
+.footer__social__input {
+  margin-top: .75rem;
+  width: 243px;
+  height: 35px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--grey50);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  border: none;
+  text-indent: 13px;
+  margin-bottom: 1.5rem;
+}
+
+.footer__social__input:focus {
+  background-color: var(--light);
+  outline: none;
+}
+
+.footer__social__btn {
+  margin-left: .25rem;
+  width: 79px;
+  height: 35px;
+  background: var(--secondary);
+  border-radius: 4px;
+  border: none;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--light);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__social__btn:hover {
+  background: var(--success);
+}
+
+.footer__social__social {
+  margin-top: 1.125rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__social__social {
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__social__icon:hover {
+  filter: brightness(50%);
+}
+
+.footer__app {
+  grid-area: app;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.footer__app__text {
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--light);
+}
+
+.footer__app__icon {
+  width: 100%;
+  max-width: 108px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__app__icon:hover {
+  filter: brightness(50%);
+}
+
+.footer__bottom {
+  width: 100%;
+  background: var(--footer);
+}
+
+.footer__bottom__text {
+  height: 4rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  color: var(--grey50);
+  text-align: center;
+  padding: 20px;
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+@media (max-width: 1250px) {
+.footer__content {
+  max-width: 160px !important;
+}
+
+  .footer__links {
+    grid-area: links;
+    display: flex;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-areas: 
+    "info" "links"
+    "social" "app" !important;
+  }
+}
+
+/* ================================================================= */
+/* ==============             Footer End            ================ */
+/* ================================================================= */
