@@ -1003,7 +1003,6 @@ header {}
   display: flex;
   flex-direction: column;
   gap: .75rem;
-
 }
 
 .footer__links__item {}
@@ -1140,17 +1139,69 @@ header {}
 }
 
   .footer__links {
-    grid-area: links;
-    display: flex;
     gap: 1rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .footer-top {
+  .footer__top {
     grid-template-areas: 
-    "info" "links"
-    "social" "app" !important;
+    "info"
+    "links"
+    "social"
+    "app";
+  }
+
+  .footer__content {
+    max-width: 768px !important;
+  }
+
+  .footer__links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .footer__links__menu {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .footer__app {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer__top {
+    padding: 48px 24px;
+  }
+
+  .footer__links {
+    flex-direction: row;
+  }
+
+  .footer__links__menu {
+    flex-direction: column;
+    margin-right: auto;
+    gap: .75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__social__input {
+    width: 70%;
+  }
+
+  .footer__social__label {
+    margin-top: 2rem !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__social__input {
+    width: 60%;
   }
 }
 
