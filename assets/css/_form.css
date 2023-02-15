@@ -18,10 +18,10 @@
   align-items: center;
 }
 
-.consultation__title {
+.consultation h2 {
   width: 100%;
   max-width: 404px;
-  font-family: var(--primary);
+  font-family: var(--font-yeseva);
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.875rem;
@@ -29,7 +29,7 @@
   color: var(--primary);
 }
 
-.consultation__form {
+.consultation form {
   margin: 40px auto;
   width: 100%;
   max-width: 776px;
@@ -43,28 +43,27 @@
   gap: 2rem;
 }
 
-.consultation__form__name { grid-area: name; }
-.consultation__form__email { grid-area: email; }
-.consultation__form__textarea { grid-area: textarea; }
-.consultation__form__form-btn { grid-area: btn; }
+.consultation form .name { grid-area: name; }
+.consultation form .email { grid-area: email; }
+.consultation form textarea { grid-area: textarea; }
+.consultation form button { grid-area: btn; }
 
-.consultation__form__name,
-.consultation__form__email,
-.consultation__form__message {
+.consultation form .name,
+.consultation form .email,
+.consultation form .message {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
 }
 
-.consultation__form__input:focus,
-.consultation__form__textarea:focus {
+.consultation form input:focus,
+.consultation form textarea:focus {
   background: var(--secondary);
   color: var(--light);
   outline: none;
 }
 
-.consultation__form__form-btn {
+.consultation form button {
   margin: 0 auto;
   width: 166px;
   font-family: var(--font-jakarta);
@@ -81,12 +80,13 @@
   cursor: pointer;
 }
 
-.consultation__form__form-btn:hover {
+.consultation form button:hover {
   background: var(--success);
   outline: none;
 }
 
-.consultation__form__label {
+.consultation form label {
+  margin-bottom: 12px;
   font-family: var(--font-yeseva);
   font-weight: 400;
   font-size: 1rem;
@@ -95,7 +95,7 @@
   color: var(--primary);
 }
 
-.consultation__form__input {
+.consultation form input {
   width: 100vw;
   max-width: 372px;
   height: 49px;
@@ -105,8 +105,8 @@
   text-indent: 21px;
 }
 
-.consultation__form__input::placeholder,
-.consultation__form__textarea::placeholder {
+.consultation form input::placeholder,
+.consultation form textarea::placeholder {
   font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .75rem;
@@ -116,7 +116,7 @@
   text-indent: 21px;
 }
 
-.consultation__form__textarea {
+.consultation form textarea {
   width: 776px;
   height: 135px;
   background: #FFFFFF;
@@ -129,7 +129,7 @@
 
 
 @media (max-width: 1000px) {
-  .consultation__form {
+  .consultation form {
     place-items: flex-start;
     grid-template-areas: 
     "name"
@@ -139,7 +139,7 @@
     gap: 2rem;
   }
 
-  .consultation__form__input {
+  .consultation form input {
     width: 100vw;
     max-width: 776px;
     height: 49px;
