@@ -3,17 +3,15 @@
 /* ==============            Footer Start           ================ */
 /* ================================================================= */
 
-.footer {
-  
-}
+footer {}
 
-.footer .container {
+footer .container {
   display: flex;
   flex-direction: column;
   background: var(--primary);
 }
 
-.footer__top {
+footer .top {
   margin: 0 auto;
   display: grid;
   grid-template-areas:
@@ -26,11 +24,11 @@
   padding: 48px 100px;
 }
 
-.footer__info { grid-area: info; }
+footer .top .info { grid-area: info; }
 
-.footer__logo {}
+footer .top .info img {}
 
-.footer__content {
+footer .top .info p {
   margin-top: 1.5rem;
   width: 100%;
   max-width: 240px;
@@ -41,21 +39,21 @@
   color: #FFFFFF;
 }
 
-.footer__links {
+footer .top nav {
   grid-area: links;
   display: flex;
   gap: 5rem;
 }
 
-.footer__links__menu {
+footer .top nav ul {
   display: flex;
   flex-direction: column;
   gap: .75rem;
 }
 
-.footer__links__item {}
+footer .top nav ul li {}
 
-.footer__links__link {
+footer .top nav ul li a {
   font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .75rem;
@@ -65,13 +63,13 @@
   cursor: pointer;
 }
 
-.footer__links__link:hover {
+footer .top nav ul li a:hover {
   color: var(--secondary);
 }
 
-.footer__social { grid-area: social; }
+footer .top .social { grid-area: social; }
 
-.footer__social__label {
+footer .top .social label {
   font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .75rem;
@@ -79,9 +77,9 @@
   color: var(--light);
 }
 
-.footer__social__newsletter {}
+footer .top .social .newsletter {}
 
-.footer__social__input {
+footer .top .social .newsletter input {
   margin-top: .75rem;
   width: 243px;
   height: 35px;
@@ -97,12 +95,12 @@
   margin-bottom: 1.5rem;
 }
 
-.footer__social__input:focus {
+footer .top .social .newsletter input:focus {
   background-color: var(--light);
   outline: none;
 }
 
-.footer__social__btn {
+footer .top .social .newsletter button {
   margin-left: .25rem;
   width: 79px;
   height: 35px;
@@ -119,33 +117,33 @@
   cursor: pointer;
 }
 
-.footer__social__btn:hover {
+footer .top .social .newsletter button:hover {
   background: var(--success);
 }
 
-.footer__social__social {
+footer .top .social .icons {
   margin-top: 1.125rem;
   display: flex;
   gap: 2rem;
 }
 
-.footer__social__social {
+footer .top .social .icons img  {
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.footer__social__icon:hover {
+footer .top .social .icons img:hover {
   filter: brightness(50%);
 }
 
-.footer__app {
+footer .top .app {
   grid-area: app;
   display: flex;
   flex-direction: column;
   gap: .75rem;
 }
 
-.footer__app__text {
+footer .top .app p {
   font-family: var(--font-jakarta);
   font-weight: 500;
   font-size: .75rem;
@@ -153,23 +151,23 @@
   color: var(--light);
 }
 
-.footer__app__icon {
+footer .top .app img {
   width: 100%;
   max-width: 108px;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.footer__app__icon:hover {
+footer .top .app img:hover {
   filter: brightness(50%);
 }
 
-.footer__bottom {
+footer .bottom {
   width: 100%;
   background: var(--footer);
 }
 
-.footer__bottom__text {
+footer .bottom p {
   height: 4rem;
   font-family: var(--font-jakarta);
   font-weight: 500;
@@ -182,17 +180,17 @@
 }
 
 @media (max-width: 1250px) {
-.footer__content {
+footer .top .info p {
   max-width: 160px !important;
 }
 
-  .footer__links {
+  footer .top nav {
     gap: 1rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .footer__top {
+  footer .top {
     grid-template-areas: 
     "info"
     "links"
@@ -200,37 +198,37 @@
     "app";
   }
 
-  .footer__content {
+  footer .top .info p {
     max-width: 768px !important;
   }
 
-  .footer__links {
+  footer .top nav {
     margin-top: 2rem;
     margin-bottom: 2rem;
     flex-direction: column;
   }
 
-  .footer__links__menu {
+  footer .top nav ul {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2rem;
   }
 
-  .footer__app {
+  footer .top .app {
     margin-top: 2rem;
   }
 }
 
 @media (max-width: 425px) {
-  .footer__top {
+  footer .top {
     padding: 48px 24px;
   }
 
-  .footer__links {
+  footer .top nav {
     flex-direction: row;
   }
 
-  .footer__links__menu {
+  footer .top nav ul {
     flex-direction: column;
     margin-right: auto;
     gap: .75rem;
@@ -238,17 +236,17 @@
 }
 
 @media (max-width: 375px) {
-  .footer__social__input {
+  footer .top .social .newsletter input {
     width: 70%;
   }
 
-  .footer__social__label {
+  footer .top .social label {
     margin-top: 2rem !important;
   }
 }
 
 @media (max-width: 320px) {
-  .footer__social__input {
+  footer .top .social .newsletter input {
     width: 60%;
   }
 }
