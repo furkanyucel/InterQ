@@ -1,0 +1,256 @@
+/* ================================================================= */
+/* ================        About US Start         ================== */
+/* ================================================================= */
+
+.about {
+  margin-top: 6.25rem;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.75rem;
+}
+
+/* about img start */
+.about figure {}
+
+.about figure img {
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  background-size: cover;
+}
+/* about img end */
+
+/* about info start */
+.about article {}
+
+.about article h2 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  color: var(--primary);
+}
+
+.about article p {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 502px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+/* about info end */
+
+@media (max-width: 1110px) {
+  .about .container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 904px) {
+  .about .container {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+/* ================================================================= */
+/* ================         About US End          ================== */
+/* ================================================================= */
+
+
+/*! ================================================================= */
+/*! ============        Why Choose InterQ Start         ============= */
+/*! ================================================================= */
+
+.choose {
+  margin-top: 6.25rem;
+}
+
+.choose .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1875rem;
+}
+
+/* choose info start */
+.choose article {}
+
+.choose article h2 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  color: var(--primary);
+}
+
+.choose article p {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 580px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+
+.choose article ul {}
+
+.choose article ul li {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.choose article ul li img {}
+.choose article ul li span {}
+/* choose info end */
+
+/* choose img start */
+.choose figure {}
+
+.choose figure img {
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  background-size: cover;
+}
+/* choose img end */
+
+@media (max-width: 1110px) {
+  .choose .container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 904px) {
+  .choose .container {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .choose article p {
+    max-width: 502px;
+  }
+}
+
+@media (max-width: 320px) {
+  .choose figure {
+    width: 100%;
+    border-radius: 24px;
+  }
+}
+
+/*! ================================================================= */
+/*! ============         Why Choose InterQ End          ============= */
+/*! ================================================================= */
+
+
+/* ================================================================= */
+/* ==============     Meet Our Best Team Start      ================ */
+/* ================================================================= */
+
+.team {
+  margin-top: 6.25rem;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team h2 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.team .album {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-areas: 
+  "rpi1 rpi2 rpi3"
+  "rpi4 rpi5 rpi6";
+  gap: 3.125rem;
+}
+
+#rpi1 { grid-area: rpi1; }
+#rpi2 { grid-area: rpi2; }
+#rpi3 { grid-area: rpi3; }
+#rpi4 { grid-area: rpi4; }
+#rpi5 { grid-area: rpi5; }
+#rpi6 { grid-area: rpi6; }
+
+@media (max-width: 1200px) {
+  .team {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #rpi1,
+  #rpi2,
+  #rpi3,
+  #rpi4,
+  #rpi5,
+  #rpi6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .team .album {
+    grid-template-areas: 
+    "rpi1 rpi2"
+    "rpi3 rpi4"
+    "rpi5 rpi6";
+  }
+}
+
+@media (max-width: 685px) {
+  .team .album {
+    grid-template-areas: 
+    "rpi1"
+    "rpi2"
+    "rpi3"
+    "rpi4"
+    "rpi5"
+    "rpi6";
+    gap: 1.5rem;
+  }
+
+  #rpi1,
+  #rpi2,
+  #rpi3,
+  #rpi4,
+  #rpi5,
+  #rpi6 {
+    width: 100%;
+    height: 402px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* ================================================================= */
+/* ==============      Meet Our Best Team End       ================ */
+/* ================================================================= */
