@@ -1,0 +1,128 @@
+
+
+/* ================================================================= */
+/* ================       Furniture Start         ================== */
+/* ================================================================= */
+
+.furniture {
+  margin: 6.25rem 1.5rem;
+}
+
+.furniture .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.furniture h2 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.furniture p  {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 623px;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--grey100);
+}
+
+.furniture .album {
+  margin-top: 2.5rem;
+  display: grid;
+  /* grid-template-columns: 450px 217px 529px; */
+  grid-template-areas: 
+  "rpi1 rpi1 rpi2"
+  "rpi1 rpi1 rpi3"
+  "rpi4 rpi5 rpi3"
+  "rpi4 rpi5 rpi7"
+  "rpi4 rpi6 rpi7";
+  gap: 2rem;
+}
+
+#rpi1 { grid-area: rpi1; }
+#rpi2 { grid-area: rpi2; }
+#rpi3 { grid-area: rpi3; }
+#rpi4 { grid-area: rpi4; }
+#rpi5 { grid-area: rpi5; }
+#rpi6 { grid-area: rpi6; margin-top: -2rem; }
+#rpi7 { grid-area: rpi7; }
+
+
+@media (max-width: 1200px) {
+  #rpi6 {
+    margin-top: 0rem !important;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  #rpi7 {
+    margin-top: -8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .furniture {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .furniture .album {
+    grid-template-areas: 
+    "rpi1"
+    "rpi2"
+    "rpi3"
+    "rpi4"
+    "rpi5"
+    "rpi6"
+    "rpi7";
+    gap: 1.5rem;
+  }
+
+  #rpi1,
+  #rpi2,
+  #rpi3,
+  #rpi4,
+  #rpi5,
+  #rpi6,
+  #rpi7 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  #rpi6 {
+    margin-top: 0rem;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  #rpi7 {
+    margin-top: 0rem;
+  }
+
+  #rpi1,
+  #rpi2,
+  #rpi3,
+  #rpi4,
+  #rpi5,
+  #rpi6,
+  #rpi7 {
+    width: 100%;
+    border-radius: 24px;
+  }
+}
+
+/* ================================================================= */
+/* ================        Furniture End          ================== */
+/* ================================================================= */
