@@ -1,0 +1,125 @@
+/* ================================================================= */
+/* ===============       How it Works Start       ================== */
+/* ================================================================= */
+
+.works h2 {
+  margin-top: 6.25rem;
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.works section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.works section article {
+  width: 100%;
+  max-width: 1026px;
+  display: grid;
+  grid-template-areas: 
+  "figure timeline info";
+  align-items: center;
+  place-items: center;
+
+}
+
+figure { grid-area: figure; }
+.timeline { grid-area: timeline; }
+.info { grid-area: info; }
+
+/* image */
+.works section article figure {
+  display: flex;
+  justify-content: center;
+}
+
+.works section article figure img {}
+
+/* timeline */
+.works section article .timeline {
+  margin-top: 4rem;
+  width: 48px;
+  height: 48px;
+  background: var(--secondary);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works section article .timeline p {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--light);
+}
+
+/* info */
+.works section article .info {
+  margin: auto 12px;
+  width: 100%;
+  max-width: 444px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.works section article .info h5 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: .875rem;
+  text-align: center;
+  color: var(--grey50);
+}
+
+.works section article .info h4 {
+  margin-top: .625rem;
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: var(--primary);
+}
+
+.works section article .info p {
+  margin-top: .625rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: var(--grey100);
+}
+
+/* section {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 45.5vw;
+  height: 100%;
+  width: 4px;
+  background: #7E57C2;
+  z-index: -1;
+} */
+
+
+
+/* ================================================================= */
+/* ===============       How it Works Start       ================== */
+/* ================================================================= */
