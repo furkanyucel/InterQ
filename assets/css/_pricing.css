@@ -1,0 +1,115 @@
+.package {}
+
+.package .container {}
+
+.package section {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.package section article {
+  position: relative;
+  width: 371px;
+  height: 685px;
+  background: #FAFAFA;
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.package section article h4 {
+  font-family: var(--font-yeseva);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.package section article h3 {
+  margin-top: 10px;
+  font-family: var(--font-jakarta);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.package section article p {
+  margin-top: 2rem;
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--primary);
+  line-break: anywhere;
+}
+
+.package section article .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.package section article .item img {
+  display: table;
+  width: 34px;
+  margin-top: 32px;
+}
+
+.package section article .item p {
+  margin-left: .75rem;
+  text-align: left;
+}
+
+.package section article button {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--secondary);
+  text-align: center;
+  padding: 12px 32px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+
+}
+
+.package section article button:hover {
+  color: var(--light);
+  border: 1px solid transparent;
+  background: var(--success);
+
+}
+
+/* basic package private code */
+.package section article:first-of-type .item:first-of-type {
+  margin-top: 2.75rem;
+}
+
+/* medium package private code */
+.package section article:nth-of-type(2) {
+  background: var(--light);
+  box-shadow: 0px 1px 26px -7px rgb(5 7 19 / 7%);
+}
+
+.package section article:nth-of-type(2) button {
+color: var(--light);
+border: 1px solid transparent;
+background: var(--secondary);
+}
+
+/* premium package private code */
+.package section article:nth-of-type(3) .item {
+  margin-top: -9px;
+}
