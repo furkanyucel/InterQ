@@ -12,7 +12,8 @@
 
 .package section article {
   position: relative;
-  width: 371px;
+  width: 100%;
+  max-width: 371px;
   height: 685px;
   background: #FAFAFA;
   border-radius: 24px;
@@ -68,6 +69,7 @@
 }
 
 .package section article button {
+  display: flex;
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
@@ -112,4 +114,37 @@ background: var(--secondary);
 /* premium package private code */
 .package section article:nth-of-type(3) .item {
   margin-top: -9px;
+}
+
+@media (max-width: 1024px) {
+  .package .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .package section {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .package section article {
+    width: 100%;
+    max-width: 422px;
+    height: 685px;
+    padding: 1.5rem;
+  }
+  
+  .package section article button {
+    width: 156px;
+  }
+}
+
+@media (max-width: 320px) {
+  .package section article {
+    height: 690px;
+  }
+
+  .package section article .item p {
+    letter-spacing: -0.05em;
+  }
 }
