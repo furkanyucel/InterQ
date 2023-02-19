@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--! css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--! Boostrap Icons CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!--! Glide.js Css CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
+
+    <title>Pricing Plan | InterQ</title>
+  </head>
+  <body>
+    <!-------------------------------->
+    <!---      Header Start        --->
+    <!-------------------------------->
+    <header id="header">
+      <div class="container">
+        <!-- navbar start -->
+        <navbar>
+          <!-- logo -->
+          <figure>
+            <img src="assets/img/logo.png" alt="Logo Icon" />
+          </figure>
+
+          <!-- links start -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="pages.html">Pages</a></li>
+          </ul>
+          <!-- links end -->
+
+          <!-- contact start -->
+          <button>Contact Us</button>
+          <!-- contact end -->
+
+          <!-- mobil hamburger menu start -->
+          <figure onclick="openMobilMenu()" class="hamburger-btn">
+            <i class="bi bi-list"></i>
+          </figure>
+          <!-- mobil hamburger menu end -->
+        </navbar>
+
+        <!--? nav mobil menu start -->
+        <div class="navbar-mobil">
+          <div class="exit">
+            <i
+              onclick="closeMobilMenu()"
+              class="bi bi-x-lg"
+              style="font-size: 24px"
+            ></i>
+          </div>
+
+          <!-- links start -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="pages.html">Pages</a></li>
+          </ul>
+          <!-- links end -->
+        </div>
+        <!--? nav mobil menu end -->
+        <!-- navbar end -->
+        <!-- hero start -->
+        <div id="hero">
+          <h1>Pricing Plan</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+            vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc,
+            purus sit vitae nisi, etiam.
+          </p>
+        </div>
+        <!-- hero end -->
+      </div>
+    </header>
+    <!-------------------------------->
+    <!---       Header End         --->
+    <!-------------------------------->
+
+    <!-------------------------------->
+    <!---    Consultation Start    --->
+    <!-------------------------------->
+    <section class="consultation">
+      <div class="container">
+        <h2>Need a consultation for your home?</h2>
+        <form action="">
+          <!-- name -->
+          <div class="name">
+            <label for="">Your Name</label>
+            <input type="text" placeholder="Your Full Name" />
+          </div>
+          <!-- email -->
+          <div class="email">
+            <label for="">Your Email</label>
+            <input type="text" placeholder="Your Email Address" />
+          </div>
+          <!-- message -->
+          <div class="message">
+            <label for="">Your Message</label>
+            <textarea name="" id="textarea" cols="100" rows="10" placeholder="Write Here"></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+    </section>
+    <!-------------------------------->
+    <!---     Consultation End     --->
+    <!-------------------------------->
+
+    <!-------------------------------->
+    <!---      Header Start        --->
+    <!-------------------------------->
+    <section class="brand">
+      <article>
+        <div class="map">
+            <iframe width="607" height="336" src="https://maps.google.com/maps?q=istanbul&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+
+        <div class="info">
+          <a href="mailto:your.email.inbox@here.com">
+            <img src="assets/img/message.png" alt="Message Icon">
+            your.email.inbox@here.com
+          </a>
+          <address>
+            <img src="assets/img/location.png" alt="Location Icon">
+            4517 Washington Ave. Manchester, Kentucky 39495
+          </address>
+          <a href="tel:+62 424 954 824">
+            <img src="assets/img/tel.png" alt="Telephone Icon">
+            +62 424 954 824
+          </a>
+        </div>
+      </article>
+    </section>
+    <!-------------------------------->
+    <!---       Header End         --->
+    <!-------------------------------->
+
+    <!-------------------------------->
+    <!---       Footer Start       --->
+    <!-------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="info">
+            <img src="assets/img/logo2.png" alt="Logo Icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+              vitae vel id id porttitor ut in. Integer pretium
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#" >Quicklink 1</a></li>
+              <li><a href="#" >Home</a></li>
+              <li><a href="#" >About Us</a></li>
+              <li><a href="#" >Portofolio</a></li>
+              <li><a href="#" >Service</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" >Quicklink 2</a></li>
+              <li><a href="#" >Pricing</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Single Blog</a></li>
+              <li><a href="#" >404 Error</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <label for="">Join Our Newsletter</label>
+            <div class="newsletter">
+              <input type="text" name="newsletter" id="newsletter" placeholder="Your Email Address">
+              <button>Send</button>
+            </div>
+            <label for="">Follow Us</label>
+            <div class="icons">
+              <img src="assets/img/fb.png" alt="Facebook Icon">
+              <img src="assets/img/instagram.png" alt="Instagram Icon">
+              <img src="assets/img/whatsapp.png" alt="Whatsapp Icon">
+            </div>
+          </div>
+          <div class="app">
+            <p>Download Our App</p>
+            <img src="assets/img/App Store.png" alt="Appstore Icon">
+            <img src="assets/img/Google Play.png" alt="Google Play Icon">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright InterQ. 2021 All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-------------------------------->
+    <!---        Footer End        --->
+    <!-------------------------------->
+
+    <script src="assets/js/navbar-mobil.js"></script>
+  </body>
+</html>
