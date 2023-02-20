@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--! css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--! Boostrap Icons CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!--! Glide.js Css CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
+
+    <title>404 Error | InterQ</title>
+  </head>
+  <body>
+    <!-------------------------------->
+    <!---      Header Start        --->
+    <!-------------------------------->
+    <header id="header">
+      <div class="container">
+        <!-- navbar start -->
+        <navbar>
+          <!-- logo -->
+          <figure>
+            <img src="assets/img/logo.png" alt="Logo Icon" />
+          </figure>
+
+          <!-- links start -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li id="pages">
+              <a>Pages</a>
+              <ul id="pages-dropdown">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="detail-blog.html">Blog Detail</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="pricing.html">Price</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- links end -->
+
+          <!-- contact start -->
+          <button>Contact Us</button>
+          <!-- contact end -->
+
+          <!-- mobil hamburger menu start -->
+          <figure onclick="openMobilMenu()" class="hamburger-btn">
+            <i class="bi bi-list"></i>
+          </figure>
+          <!-- mobil hamburger menu end -->
+        </navbar>
+
+        <!--? nav mobil menu start -->
+        <div class="navbar-mobil">
+          <div class="exit">
+            <i
+              onclick="closeMobilMenu()"
+              class="bi bi-x-lg"
+              style="font-size: 24px"
+            ></i>
+          </div>
+
+          <!-- links start -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="pages.html">Pages</a></li>
+          </ul>
+          <!-- links end -->
+        </div>
+        <!--? nav mobil menu end -->
+        <!-- navbar end -->
+        <!-- hero start -->
+        <div id="hero">
+          <h1>404 <br> Page Not Found</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+            vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc,
+            purus sit vitae nisi, etiam.
+          </p>
+          <button>Back to Homepage</button>
+        </div>
+        <!-- hero end -->
+      </div>
+    </header>
+    <!-------------------------------->
+    <!---       Header End         --->
+    <!-------------------------------->
+
+    <!-- flex grow -->
+    
+    <!-------------------------------->
+    <!---       Footer Start       --->
+    <!-------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="info">
+            <img src="assets/img/logo2.png" alt="Logo Icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+              vitae vel id id porttitor ut in. Integer pretium
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#" >Quicklink 1</a></li>
+              <li><a href="#" >Home</a></li>
+              <li><a href="#" >About Us</a></li>
+              <li><a href="#" >Portofolio</a></li>
+              <li><a href="#" >Service</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" >Quicklink 2</a></li>
+              <li><a href="#" >Pricing</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Single Blog</a></li>
+              <li><a href="#" >404 Error</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <label for="">Join Our Newsletter</label>
+            <div class="newsletter">
+              <input type="text" name="newsletter" id="newsletter" placeholder="Your Email Address">
+              <button>Send</button>
+            </div>
+            <label for="">Follow Us</label>
+            <div class="icons">
+              <img src="assets/img/fb.png" alt="Facebook Icon">
+              <img src="assets/img/instagram.png" alt="Instagram Icon">
+              <img src="assets/img/whatsapp.png" alt="Whatsapp Icon">
+            </div>
+          </div>
+          <div class="app">
+            <p>Download Our App</p>
+            <img src="assets/img/App Store.png" alt="Appstore Icon">
+            <img src="assets/img/Google Play.png" alt="Google Play Icon">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright InterQ. 2021 All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-------------------------------->
+    <!---        Footer End        --->
+    <!-------------------------------->
+
+    <script src="assets/js/navbar-mobil.js"></script>
+  </body>
+</html>
