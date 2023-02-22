@@ -113,6 +113,7 @@
 }
 
 .choose article ul li img {}
+
 .choose article ul li span {}
 /* choose info end */
 
@@ -124,6 +125,13 @@
   min-width: 300px;
   object-fit: cover;
   background-size: cover;
+  transform: scale(1);
+  transition: transform 400ms;
+  overflow: hidden;
+}
+
+.choose figure img:hover {
+  transform: scale(1.2);
 }
 /* choose img end */
 
@@ -198,6 +206,17 @@
 #rpi4 { grid-area: rpi4; }
 #rpi5 { grid-area: rpi5; }
 #rpi6 { grid-area: rpi6; }
+
+.team .album img {
+  margin-top: 0px !important;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.team .album img:hover {
+  transform: scale(1.2);
+  z-index: 99;
+}
 
 @media (max-width: 1200px) {
   .team {
