@@ -57,6 +57,14 @@
 #rpi6 { grid-area: rpi6; margin-top: -2rem; }
 #rpi7 { grid-area: rpi7; }
 
+.furniture .album img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.furniture .album img:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 1200px) {
   #rpi6 {
