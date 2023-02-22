@@ -13,6 +13,8 @@
 }
 
 .works section {
+  margin-top: 4rem;
+  margin-bottom: 6.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,23 +102,6 @@ figure { grid-area: figure; }
   line-height: 1.75rem;
   color: var(--grey100);
 }
-
-/* section {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 45.5vw;
-  height: 100%;
-  width: 4px;
-  background: #7E57C2;
-  z-index: -1;
-} */
 
 
 
