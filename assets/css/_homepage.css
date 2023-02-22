@@ -596,7 +596,15 @@ transform: scale(1.1);
 
 .updates section article .card {}
 
-.updates section article .card figure {}
+.updates section article .card figure {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.updates section article .card figure:hover {
+  transform: scale(1.05);
+}
 
 .updates section article .card figure img {
   border-radius: 20px;
@@ -767,8 +775,6 @@ transform: scale(1.1);
   background: var(--grey10);
 }
 
-.customers section .left .person img {}
-
 .customers section .left .person img .info {}
 
 .customers section .left .person .info .name {
@@ -828,6 +834,13 @@ transform: scale(1.1);
   border-radius: 24px;
   height: 400px;
   object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.customers section .right img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1250px) {
