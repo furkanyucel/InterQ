@@ -19,6 +19,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <title>Detail Blog | InterQ</title>
   </head>
   <body>
@@ -138,8 +142,8 @@
             scelerisque urna, vel.
           </p>
 
-          <img src="assets/img/blog-6.png" alt="Blog Image" />
-          <img src="assets/img/blog-4.png" alt="Blog Image" />
+          <img src="assets/img/blog-6.png" alt="Blog Image" data-aos="flip-down" />
+          <img src="assets/img/blog-4.png" alt="Blog Image" data-aos="flip-up" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
@@ -233,10 +237,11 @@
           <article>
             <!-- card 1 -->
             <div class="card">
-              <figure>
+              <figure data-aos="fade-right">
                 <img
                   src="assets/img/get-more-updates-1.png"
                   alt="Recent Blog Image 1"
+                  data-aos="fade-right"
                 />
               </figure>
               <time>12 Şubat 2023</time>
@@ -253,6 +258,7 @@
                 <img
                   src="assets/img/get-more-updates-2.png"
                   alt="Recent Blog Image 2"
+                  data-aos="flip-up"
                 />
               </figure>
               <time>12 Şubat 2023</time>
@@ -269,6 +275,7 @@
                 <img
                   src="assets/img/get-more-updates-3.png"
                   alt="Recent Blog Image 3"
+                  data-aos="fade-left"
                 />
               </figure>
               <time>12 Şubat 2023</time>
@@ -347,5 +354,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
