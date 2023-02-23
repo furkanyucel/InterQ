@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>About Us | InterQ</title>
   </head>
   <body>
@@ -110,11 +113,11 @@
     <section class="about">
       <div class="container">
         <!-- about img -->
-        <figure>
+        <figure data-aos="flip-up">
           <img src="assets/img/about-img.png" alt="About Image" />
         </figure>
         <!-- About Info Start -->
-        <article>
+        <article data-aos="slide-left">
           <h2>About InterQ</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
@@ -141,7 +144,7 @@
     <section class="choose">
       <div class="container">
         <!-- Choose Start -->
-        <article>
+        <article data-aos="slide-right">
           <h2>Why Choose InterQ</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. 
@@ -163,7 +166,7 @@
         </article>
         <!-- Choose End -->
         <!-- Choose Img -->
-        <figure>
+        <figure data-aos="flip-down">
           <img src="assets/img/about-img.png" alt="About Image" />
         </figure>
       </div>
@@ -183,31 +186,37 @@
             id="rpi1"
             src="assets/img/team-1.png"
             alt="Meet Our Best Team Image 1"
+            data-aos="fade-right" data-aos-delay="100"
           />
           <img
             id="rpi2"
             src="assets/img/team-2.png"
             alt="Meet Our Best Team Image 2"
+            data-aos="flip-down" data-aos-delay="200"
           />
           <img
             id="rpi3"
             src="assets/img/team-3.png"
             alt="Meet Our Best Team Image 3"
+            data-aos="fade-left" data-aos-delay="300"
           />
           <img
             id="rpi4"
             src="assets/img/team-4.png"
             alt="Meet Our Best Team Image 4"
+            data-aos="fade-right" data-aos-delay="400"
           />
           <img
             id="rpi5"
             src="assets/img/team-5.png"
             alt="Meet Our Best Team Image 5"
+            data-aos="flip-down" data-aos-delay="500"
           />
           <img
           id="rpi6"
           src="assets/img/team-6.png"
           alt="Meet Our Best Team Image 6"
+          data-aos="fade-left" data-aos-delay="600"
         />
         </div>
       </div>
@@ -304,5 +313,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
