@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Pricing Plan | InterQ</title>
   </head>
   <body>
@@ -113,7 +116,7 @@
         <section>
           <article>
             <!-- card 1 -->
-            <div class="card">
+            <div class="card" data-aos="fade-right">
               <figure>
                 <img src="assets/img/blog-1.png" alt="Blog 1" />
               </figure>
@@ -126,7 +129,7 @@
               <button>Read More</button>
             </div>
             <!-- card 2 -->
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <figure>
                 <img src="assets/img/blog-2.png" alt="Blog 2" />
               </figure>
@@ -139,7 +142,7 @@
               <button>Read More</button>
             </div>
             <!-- card 3 -->
-            <div class="card">
+            <div class="card" data-aos="fade-left">
               <figure>
                 <img src="assets/img/blog-3.png" alt="Blog 3" />
               </figure>
@@ -152,7 +155,7 @@
               <button>Read More</button>
             </div>
             <!-- card 4 -->
-            <div class="card">
+            <div class="card" data-aos="fade-right">
               <figure>
                 <img src="assets/img/blog-4.png" alt="Blog 4" />
               </figure>
@@ -165,7 +168,7 @@
               <button>Read More</button>
             </div>
             <!-- card 5 -->
-            <div class="card">
+            <div class="card" data-aos="flip-down">
               <figure>
                 <img src="assets/img/blog-5.png" alt="Blog 5" />
               </figure>
@@ -178,7 +181,7 @@
               <button>Read More</button>
             </div>
             <!-- card 6 -->
-            <div class="card">
+            <div class="card" data-aos="fade-left">
               <figure>
                 <img src="assets/img/blog-6.png" alt="Blog 6" />
               </figure>
@@ -191,7 +194,7 @@
               <button>Read More</button>
             </div>
             <!-- card 7 -->
-            <div class="card">
+            <div class="card" data-aos="fade-right">
               <figure>
                 <img src="assets/img/get-more-updates-1.png" alt="Get More Updates Image 7" />
               </figure>
@@ -204,7 +207,7 @@
               <button>Read More</button>
             </div>
             <!-- card 8 -->
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <figure>
                 <img src="assets/img/get-more-updates-2.png" alt="Get More Updates Image 8" />
               </figure>
@@ -217,7 +220,7 @@
               <button>Read More</button>
             </div>
             <!-- card 9 -->
-            <div class="card">
+            <div class="card" data-aos="fade-left">
               <figure>
                 <img src="assets/img/get-more-updates-3.png" alt="Get More Updates Image 9"
                 />
@@ -297,5 +300,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
