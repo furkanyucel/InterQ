@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Pricing Plan | InterQ</title>
   </head>
   <body>
@@ -111,7 +114,7 @@
       <div class="container">
         <section>
           <!-- package 1 -->
-          <article>
+          <article data-aos="fade-right">
             <h4>basic</h4>
             <h3>$32</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in.</p>
@@ -133,7 +136,7 @@
             <button>Pick Package</button>
           </article>
           <!-- package 2 -->
-          <article>
+          <article data-aos="flip-up">
             <h4>medium</h4>
             <h3>$60</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in.</p>
@@ -160,7 +163,7 @@
             <button>Pick Package</button>
           </article>
           <!-- package 3 -->
-          <article>
+          <article data-aos="fade-left">
             <h4>premium</h4>
             <h3>$100</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in.</p>
@@ -286,5 +289,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
