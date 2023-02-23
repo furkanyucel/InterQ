@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Homepage | InterQ</title>
   </head>
   <body>
@@ -111,11 +114,11 @@
     <section class="about">
       <div class="container">
         <!-- about img -->
-        <figure class="fade-in-left">
+        <figure data-aos="fade-up">
           <img src="assets/img/about-img.png" alt="About Image" />
         </figure>
         <!-- About Info Start -->
-        <article class="fade-in-right">
+        <article data-aos="fade-left">
           <h2>About InterQ</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
@@ -144,7 +147,7 @@
         <h2>Our Service</h2>
         <article>
           <!-- card 1 -->
-          <div class="card">
+          <div class="card" data-aos="slide-right">
             <figure>
               <img src="assets/img/interior.png" alt="Interior Design Icon" />
             </figure>
@@ -156,7 +159,7 @@
             </p>
           </div>
           <!-- card 2 -->
-          <div class="card">
+          <div class="card" data-aos="slide-up">
             <figure>
               <img src="assets/img/home.png" alt="Home Design Icon" />
             </figure>
@@ -168,7 +171,7 @@
             </p>
           </div>
           <!-- card 3 -->
-          <div class="card">
+          <div class="card" data-aos="slide-left">
             <figure>
               <img src="assets/img/office.png" alt="Office Design Icon" />
             </figure>
@@ -202,26 +205,31 @@
             id="rpi1"
             src="assets/img/recent-project-1.png"
             alt="Recent Project Image 1"
+            data-aos="flip-up" data-aos-delay="100"
           />
           <img
             id="rpi2"
             src="assets/img/recent-project-2.png"
             alt="Recent Project Image 2"
+            data-aos="flip-down" data-aos-delay="200"
           />
           <img
             id="rpi3"
             src="assets/img/recent-project-3.png"
             alt="Recent Project Image 3"
+            data-aos="flip-right" data-aos-delay="300"
           />
           <img
             id="rpi4"
             src="assets/img/recent-project-4.png"
             alt="Recent Project Image 4"
+            data-aos="flip-down" data-aos-delay="400"
           />
           <img
             id="rpi5"
             src="assets/img/recent-project-5.png"
             alt="Recent Project Image 5"
+            data-aos="flip-up" data-aos-delay="500"
           />
         </div>
       </div>
@@ -245,7 +253,7 @@
         <section>
           <article>
             <!-- card 1 -->
-            <div class="card">
+            <div class="card" data-aos="slide-right">
               <figure>
                 <img src="assets/img/get-more-updates-1.png" alt="Get More Updates Image 1" />
               </figure>
@@ -258,7 +266,7 @@
               <button>Read More</button>
             </div>
             <!-- card 2 -->
-            <div class="card">
+            <div class="card" data-aos="slide-up">
               <figure>
                 <img src="assets/img/get-more-updates-2.png" alt="Get More Updates Image 2" />
               </figure>
@@ -271,7 +279,7 @@
               <button>Read More</button>
             </div>
             <!-- card 3 -->
-            <div class="card">
+            <div class="card" data-aos="slide-left">
               <figure>
                 <img src="assets/img/get-more-updates-3.png" alt="Get More Updates Image 3"
                 />
@@ -310,7 +318,7 @@
           <!-- left -->
           <article class="left">
             <!-- customer 1 -->
-            <div class="person">
+            <div class="person" data-aos="fade-left" data-aos-delay="100">
               <img src="assets/img/avatar-1.png" alt="" />
               <div class="info">
                 <p class="name">Esther Howard</p>
@@ -318,7 +326,7 @@
               </div>
             </div>
             <!-- customer 2 -->
-              <div class="person">
+              <div class="person" data-aos="fade-right" data-aos-delay="200">
               <img src="assets/img/avatar-2.png" alt="" />
               <div class="info">
                 <p class="name">Esther Howard</p>
@@ -326,7 +334,7 @@
               </div>
             </div>
             <!-- customer 3 -->
-              <div class="person">
+              <div class="person" data-aos="fade-left" data-aos-delay="300">
               <img src="assets/img/avatar-3.png" alt="" />
               <div class="info">
                 <p class="name">Esther Howard</p>
@@ -334,15 +342,16 @@
               </div>
             </div>
             <!-- customer 4 -->
-            <div class="person">
+            <div class="person" data-aos="fade-right" data-aos-delay="400">
               <img src="assets/img/avatar-4.png" alt="" />
               <div class="info">
                 <p class="name">Esther Howard</p>
                 <p class="job">Content Creator</p>
               </div>
+            </div>
           </article>
           <!-- center -->
-          <article class="center">
+          <article class="center" data-aos="zoom-out">
             <h4>It was a Great Experience!</h4>
             <div class="stars">
               <i class="bi bi-star-fill"></i>
@@ -364,7 +373,7 @@
             </p>
           </article>
           <!-- right -->
-          <article class="right">
+          <article class="right" data-aos="slide-up">
             <img src="assets/img/customers-img.png" alt="Our Customers Review Image" />
           </article>
         </section>
@@ -463,5 +472,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
