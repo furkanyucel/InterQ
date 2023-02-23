@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Service | InterQ</title>
   </head>
   <body>
@@ -112,7 +115,7 @@
         <h2>Our Service</h2>
         <article>
           <!-- card 1 -->
-          <div class="card">
+          <div class="card" data-aos="slide-right">
             <figure>
               <img src="assets/img/interior.png" alt="Interior Design Icon" />
             </figure>
@@ -124,7 +127,7 @@
             </p>
           </div>
           <!-- card 2 -->
-          <div class="card">
+          <div class="card" data-aos="slide-up">
             <figure>
               <img src="assets/img/home.png" alt="Home Design Icon" />
             </figure>
@@ -136,7 +139,7 @@
             </p>
           </div>
           <!-- card 3 -->
-          <div class="card">
+          <div class="card" data-aos="slide-left">
             <figure>
               <img src="assets/img/office.png" alt="Office Design Icon" />
             </figure>
@@ -162,7 +165,7 @@
         <h2>How it Works</h2>
         <section>
           <!-- timeline 1 -->
-          <article>
+          <article data-aos="slide-right">
             <figure>
               <img src="assets/img/works-1.png" alt="How it Works Image 1">
             </figure>
@@ -176,7 +179,7 @@
             </div>
           </article>
           <!-- timeline 2 -->
-          <article>
+          <article data-aos="slide-left">
             <div class="info">
               <h5>STEP 1</h5>
               <h4>Select one of our talented designers.</h4>
@@ -190,7 +193,7 @@
             </figure>
           </article>
           <!-- timeline 3 -->
-          <article>
+          <article data-aos="slide-right">
             <figure>
               <img src="assets/img/works-3.png" alt="How it Works Image 3">
             </figure>
@@ -204,7 +207,7 @@
             </div>
           </article>
           <!-- timeline 4 -->
-          <article>
+          <article data-aos="slide-left">
             <div class="info">
               <h5>STEP 1</h5>
               <h4>Select one of our talented designers.</h4>
@@ -218,7 +221,7 @@
             </figure>
           </article>
           <!-- timeline 5 -->
-          <article>
+          <article data-aos="slide-right">
             <figure>
               <img src="assets/img/works-5.png" alt="How it Works Image 5">
             </figure>
@@ -296,5 +299,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
