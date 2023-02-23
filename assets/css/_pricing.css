@@ -24,7 +24,7 @@
 }
 
 .package section article:hover {
-  transform: scale(1.05);
+  transform: scale(1.2) !important;
   box-shadow: 4px 4px 10px -3px rgba(0,0,0,0.2);
 }
 
