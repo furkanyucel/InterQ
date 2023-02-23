@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
     />
 
+    <!--! Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Homepage | InterQ</title>
   </head>
   <body>
@@ -120,26 +123,32 @@
             id="rpi1"
             src="assets/img/recent-project-1.png"
             alt="Recent Project Image 1"
+            data-aos="fade-down" data-aos-delay="100"
           />
           <img
             id="rpi2"
             src="assets/img/recent-project-2.png"
             alt="Recent Project Image 2"
+            data-aos="fade-up" data-aos-delay="200"
           />
           <img
             id="rpi3"
             src="assets/img/recent-project-3.png"
             alt="Recent Project Image 3"
+            data-aos="fade-up" data-aos-delay="300"
+
           />
           <img
             id="rpi4"
             src="assets/img/recent-project-4.png"
             alt="Recent Project Image 4"
+            data-aos="fade-down" data-aos-delay="400"
           />
           <img
             id="rpi5"
             src="assets/img/recent-project-5.png"
             alt="Recent Project Image 5"
+            data-aos="fade-up" data-aos-delay="500"
           />
         </div>
       </div>
@@ -164,36 +173,45 @@
             id="rpi1"
             src="assets/img/furniture-1.png"
             alt="Recent Project Image 1"
+            data-aos="fade-right"
+            
           />
           <img
             id="rpi2"
             src="assets/img/furniture-2.png"
             alt="Recent Project Image 2"
+            data-aos="fade-left" data-aos-delay="100"
           />
           <img
             id="rpi3"
             src="assets/img/furniture-3.png"
             alt="Recent Project Image 3"
+            data-aos="fade-left" data-aos-delay="500"
           />
           <img
             id="rpi4"
             src="assets/img/furniture-4.png"
             alt="Recent Project Image 4"
+            data-aos="fade-right" data-aos-delay="100"
           />
           <img
             id="rpi5"
             src="assets/img/furniture-5.png"
             alt="Recent Project Image 5"
+            data-aos="flip-down" data-aos-delay="100"
           />
           <img
           id="rpi6"
           src="assets/img/furniture-6.png"
           alt="Recent Project Image 6"
+          data-aos="flip-down" data-aos-delay="500"
+
         />
         <img
         id="rpi7"
         src="assets/img/furniture-7.png"
         alt="Recent Project Image 7"
+        data-aos="fade-left" data-aos-delay="100"
       />
         </div>
       </div>
@@ -260,5 +278,12 @@
     <!-------------------------------->
 
     <script src="assets/js/navbar-mobil.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 900,
+      });
+    </script>
   </body>
 </html>
