@@ -103,6 +103,48 @@ figure { grid-area: figure; }
   color: var(--grey100);
 }
 
+@media (max-width: 768px) {
+  .works section article {
+    grid-template-areas: 
+    "figure" "timeline" "info";
+  }
+}
+
+@media (max-width: 425px) {
+
+  .works section article .info {
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .works section article .info h4 {
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .works section article .info p {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .works section article .info {
+    max-width: 300px;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .works section article .info p {
+    text-align: center;
+  }
+
+  .works section article figure {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 
 
 /* ================================================================= */
