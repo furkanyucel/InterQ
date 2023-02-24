@@ -18,6 +18,10 @@
   border: 1px solid var(--light);
 }
 
+.detail-blog-header navbar button a {
+  color: var(--light);
+}
+
 /* pages dropdown */
 .pages-dropdown {
   display: none;
