@@ -1,0 +1,26 @@
+.scroll-top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 36px;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--light);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.scroll-top-button.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bi-arrow-up-short {
+  font-size: 2rem;
+}
