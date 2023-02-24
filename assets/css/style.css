@@ -2,6 +2,7 @@
 @import url(_typography.css);
 @import url(_keyframes.css);
 @import url(_scroll-top-button.css);
+@import url(_form.css);
 
 @import url(_homepage.css); /* Home page */
 @import url(_aboutus.css); /* About us */
@@ -11,8 +12,4 @@
 @import url(_blog.css); /* Blog */
 @import url(_detail-blog.css); /* Detail Blog */
 @import url(_contactus.css); /* Contact Us */
-
-
-
-@import url(_form.css);
-@import url(_footer.css);
+@import url(_footer.css); /* Footer */
