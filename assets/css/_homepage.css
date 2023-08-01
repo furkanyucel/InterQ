@@ -365,8 +365,7 @@ header #hero button:hover {
   margin-top: 6.25rem;
 }
 
-.service .container {
-}
+.service .container {}
 
 .service h2 {
   font-family: var(--font-yeseva);
@@ -482,6 +481,8 @@ header #hero button:hover {
   color: var(--grey100);
 }
 
+
+
 .project .album {
   margin-top: 2.5rem;
   display: grid;
@@ -508,13 +509,28 @@ header #hero button:hover {
   grid-area: rpi5;
 }
 
-.project .album img {
+
+
+
+#rpi1,
+#rpi2,
+#rpi3,
+#rpi4,
+#rpi5 {
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
-  overflow: hidden;
 }
 
-.project .album img:hover {
+#rpi1:hover,
+#rpi2:hover,
+#rpi3:hover,
+#rpi4:hover,
+#rpi5:hover {
   transform: scale(1.05);
 }
 
