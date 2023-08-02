@@ -491,6 +491,7 @@ header #hero button:hover {
     "rpi2 rpi3 rpi5";
   gap: 1.5rem;
   overflow: hidden;
+  width: minmax(280px, 900px);
 }
 
 #rpi1 {
