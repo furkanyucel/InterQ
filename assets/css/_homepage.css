@@ -491,7 +491,6 @@ header #hero button:hover {
     "rpi2 rpi3 rpi5";
   gap: 1.5rem;
   overflow: hidden;
-  width: minmax(280px, 900px);
 }
 
 #rpi1 {
@@ -675,6 +674,7 @@ header #hero button:hover {
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: var(--grey100);
+  text-align: left;
 }
 
 .updates section article .card button {
@@ -842,6 +842,7 @@ header #hero button:hover {
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: var(--grey100);
+  text-align: left;
 }
 
 /* center */
@@ -872,6 +873,7 @@ header #hero button:hover {
   font-size: 14px;
   line-height: 28px;
   color: var(--grey100);
+  text-align: left;
 }
 
 /* right */
