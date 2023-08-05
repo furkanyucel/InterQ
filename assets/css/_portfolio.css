@@ -54,7 +54,7 @@
 #rpi3 { grid-area: rpi3; }
 #rpi4 { grid-area: rpi4; }
 #rpi5 { grid-area: rpi5; }
-#rpi6 { grid-area: rpi6; margin-top: -2rem; }
+#rpi6 { grid-area: rpi6; }
 #rpi7 { grid-area: rpi7; }
 
 .furniture .album img {
