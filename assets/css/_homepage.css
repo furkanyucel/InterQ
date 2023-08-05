@@ -221,12 +221,6 @@ header #hero p {
 }
 
 header #hero button {
-  font-family: var(--font-jakarta);
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75rem;
-  text-align: center;
-  color: var(--light);
   padding: 12px 44px;
   background: var(--secondary);
   border-radius: 4px;
@@ -237,6 +231,15 @@ header #hero button {
 header #hero button:hover {
   color: var(--light);
   background: var(--success);
+}
+
+header #hero button a {
+  font-family: var(--font-jakarta);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--light);
 }
 /* hero end */
 
