@@ -49,13 +49,17 @@
 
 .blog section article .card {}
 
-.blog section article .card figure {}
-
-.blog section article .card figure img {
-  border-radius: 20px;
+.blog section article .card figure {
   transform: scale(1);
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+}
+
+.blog section article .card figure img {
+  border-radius: 20px;
+  /* transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; */
 }
 
 .blog section article .card figure img:hover {
