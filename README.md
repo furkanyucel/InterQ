@@ -1,5 +1,3 @@
-# Premium Interior Web Template with Modern and Minimalist Style
-
 # Premium Interior Web Template
 
 Bu proje, modern ve minimalist bir tasarım anlayışıyla geliştirilmiş premium iç mekan web şablonunu içerir.
@@ -30,6 +28,11 @@ Bu proje, modern ve minimalist bir tasarım anlayışıyla geliştirilmiş premi
 
 ## Ekran Görüntüleri
 
+### Anasayfa
 ![Anasayfa](screenshots/anasayfa.jpg)
+
+### Hakkımızda
 ![Hakkımızda](screenshots/hakkimizda.jpg)
+
+### Blog Detay
 ![Blog Detay](screenshots/blogdetay.jpg)
